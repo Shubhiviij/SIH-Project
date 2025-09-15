@@ -10,7 +10,7 @@ class DepartmentPerformancePage extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: Text('Department Performance')),
+      appBar: AppBar(title: Text('Dept. Performance')),
       body: ListView.builder(
         padding: const EdgeInsets.all(22),
         itemCount: depts.length,

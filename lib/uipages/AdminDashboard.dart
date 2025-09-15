@@ -21,7 +21,7 @@ class AdminDashboard extends StatelessWidget {
           _buildNavTile(context, Icons.report, 'Manage Reports', '/manage_reports'),
           _buildNavTile(context, Icons.map, 'Live Map View', '/live_map_view'),
           _buildNavTile(context, Icons.analytics, 'Analytics & Reports', '/analytics_reports'),
-          _buildNavTile(context, Icons.apartment, 'Department Performance', '/department_performance'),
+          _buildNavTile(context, Icons.apartment, 'Dept. Performance', '/department_performance'),
           _buildNavTile(context, Icons.dashboard_customize, 'System Overview/KPIs', '/system_overview'),
           _buildNavTile(context, Icons.group, 'Staff Management', '/staff_management'),
           _buildNavTile(context, Icons.person, 'User Management', '/user_management'),

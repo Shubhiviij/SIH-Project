@@ -9,7 +9,7 @@ class SystemOverviewPage extends StatelessWidget {
       {'label': 'Active Users', 'value': '1,235'},
       {'label': 'Open Reports', 'value': '42'},
       {'label': 'Staff Online', 'value': '17'},
-      {'label': 'Avg.Resolve Time', 'value': '2h 8m'},
+      {'label': 'Avg.ResolveTime', 'value': '2h 8m'},
     ];
 
     return Scaffold(
