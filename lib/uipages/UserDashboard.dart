@@ -1,7 +1,37 @@
 import 'package:flutter/material.dart';
+import '../services/api_service.dart';
 
 // User dashboard: Entry/home for citizens, fast actions, stats
-class UserDashboard extends StatelessWidget {
+class UserDashboard extends StatefulWidget {
+  @override
+  _UserDashboardState createState() => _UserDashboardState();
+}
+
+class _UserDashboardState extends State<UserDashboard> {
+  List<dynamic> issues = []; // Declare the issues variable
+  bool isLoading = true; // Optional: for loading state
+
+  @override
+  void initState() {
+    super.initState();
+    loadIssues();
+  }
+
+  void loadIssues() async {
+    try {
+      var data = await ApiService.fetchIssues();
+      setState(() {
+        issues = data;
+        isLoading = false; // Optional: stop loading
+      });
+    } catch (e) {
+      print("Error: $e");
+      setState(() {
+        isLoading = false; // Optional: stop loading even on error
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,12 +98,30 @@ class UserDashboard extends StatelessWidget {
             // Example: recent activity preview
             Text("Recent Activity", style: Theme.of(context).textTheme.titleMedium),
             SizedBox(height: 12),
+            // Show loading or actual data
+            isLoading
+                ? Center(child: CircularProgressIndicator())
+                : issues.isEmpty
+                ? ListTile(
+              leading: Icon(Icons.info, color: Colors.grey),
+              title: Text("No recent activity"),
+              subtitle: Text("Your reports will appear here"),
+            )
+                : Column(
+              children: issues.take(3).map<Widget>((issue) {
+                return ListTile(
+                  leading: Icon(Icons.check_circle, color: Colors.green),
+                  title: Text(issue['title'] ?? 'Issue'),
+                  subtitle: Text(issue['timestamp'] ?? 'Recently'),
+                );
+              }).toList(),
+            ),
+            // Static example for now
             ListTile(
               leading: Icon(Icons.check_circle, color: Colors.green),
               title: Text("Pothole issue on 3rd Street resolved"),
               subtitle: Text("2 hrs ago"),
             ),
-            // This area can be extended to dynamically list updates/notifications
           ],
         ),
       ),

@@ -9,7 +9,7 @@ class SystemOverviewPage extends StatelessWidget {
       {'label': 'Active Users', 'value': '1,235'},
       {'label': 'Open Reports', 'value': '42'},
       {'label': 'Staff Online', 'value': '17'},
-      {'label': 'Avg.ResolveTime', 'value': '2h 8m'},
+      {'label': 'Avg.ResolveTime', 'value': '2hhi 8m'},
     ];
 
     return Scaffold(
@@ -26,9 +26,9 @@ class SystemOverviewPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(kpi['label']!, style: TextStyle(color: Colors.blueGrey, fontSize: 16)),
+                Text(kpi['label']!, style: TextStyle(color: Colors.blueGrey, fontSize: 15)),
                 SizedBox(height: 12),
-                Text(kpi['value']!, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
+                Text(kpi['value']!, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
               ],
             ),
           ),
