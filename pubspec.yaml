@@ -1,0 +1,38 @@
+
+name: civicalert
+description: "A new Flutter project."
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.5
+  http: ^0.13.6
+
+  cupertino_icons: ^1.0.8
+  flutter_dotenv: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
+
+flutter_launcher_icons:
+  android: "launcher-icon"
+  ios: true
+  image_path: "civicalert/icon/civicicon.jpg"
+
+
+
+# The following section is specific to Flutter packages.
+flutter:
+
+
+  uses-material-design: true
+
