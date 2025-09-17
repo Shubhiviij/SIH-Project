@@ -1,21 +1,40 @@
-<<<<<<< HEAD
-# civicalert
+# 🏙️ Civic Issue Reporting and Resolution System
 
-A new Flutter project.
+A crowdsourced platform for reporting and resolving civic issues (like potholes, garbage collection, streetlights, etc.) in cities.  
+Built as part of **Smart India Hackathon (SIH) 2025**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 👤 **User Authentication** – Register/Login securely  
+- 📍 **Issue Reporting** – Citizens can report issues with description, category, and location  
+- 🖼️ **Media Uploads** – Upload photos/screenshots of issues  
+- 🗂️ **Issue Tracking** – Track status: pending, resolved, or rejected  
+- 🏢 **Authority Dashboard** – Admins can view, assign, and resolve issues  
+- 📊 **Analytics** – Insights on issues by category, status, and region  
+- 🔍 **AI Scope** – Future integration for auto-categorization & prioritization of issues  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# SIH-Project
-Topic : Crowdsourced Civic Issue Reporting and Resolution System
->>>>>>> 5150d027030f17c29b9ba03a32ab0759a02db555
+## 🛠️ Tech Stack
+
+**Frontend**
+- React.js  
+- Tailwind CSS  
+
+**Backend**
+- Node.js + Express.js  
+- REST APIs  
+
+**Database**
+- PostgreSQL (via pgAdmin for management)  
+
+**Tools**
+- Postman (API testing)  
+- Docker (optional deployment)  
+
+---
+
+## 📂 Project Structure
+
