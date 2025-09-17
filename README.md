@@ -20,8 +20,8 @@ Built as part of **Smart India Hackathon (SIH) 2025**.
 ## 🛠️ Tech Stack
 
 **Frontend**
-- React.js  
-- Tailwind CSS  
+- Dart  
+- flutter  
 
 **Backend**
 - Node.js + Express.js  
@@ -32,9 +32,8 @@ Built as part of **Smart India Hackathon (SIH) 2025**.
 
 **Tools**
 - Postman (API testing)  
-- Docker (optional deployment)  
-
 ---
 
 ## 📂 Project Structure
+
 
