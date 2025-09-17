@@ -34,6 +34,6 @@ Built as part of **Smart India Hackathon (SIH) 2025**.
 - Postman (API testing)  
 ---
 
-## 📂 Project Structure
+
 
 
