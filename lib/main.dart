@@ -1,10 +1,9 @@
-
 import 'package:civicalert/uipages/AchievementsPage.dart';
 import 'package:civicalert/uipages/AdminDashboard.dart';
 import 'package:civicalert/uipages/AdminSettingsPage.dart';
 import 'package:civicalert/uipages/AnalyticsReportsPage.dart';
 import 'package:civicalert/uipages/AppUpdatesPage.dart';
-import 'package:civicalert/uipages/AttachmentGallaryPage.dart';
+import 'package:civicalert/uipages/AttachmentGalleryPage.dart';
 import 'package:civicalert/uipages/AuditLogsPage.dart';
 import 'package:civicalert/uipages/CommentThreadPage.dart';
 import 'package:civicalert/uipages/DepartmentPerformancePage.dart';
@@ -104,11 +103,7 @@ class CivicReporterApp extends StatelessWidget {
           case '/admin_settings': return MaterialPageRoute(builder: (_) => AdminSettingsPage());
           case '/app_updates': return MaterialPageRoute(builder: (_) => AppUpdatesPage());
           default:
-            return MaterialPageRoute(
-              builder: (_) => Scaffold(
-                body: Center(child: Text('404: Page not found')),
-              ),
-            );
+            return MaterialPageRoute(builder: (_) => LoginPage());
         }
       },
     );
