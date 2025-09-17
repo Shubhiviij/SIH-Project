@@ -1,4 +1,5 @@
-# civic_alert
+<<<<<<< HEAD
+# civicalert
 
 A new Flutter project.
 
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# SIH-Project
+Topic : Crowdsourced Civic Issue Reporting and Resolution System
+>>>>>>> 5150d027030f17c29b9ba03a32ab0759a02db555
